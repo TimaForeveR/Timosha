@@ -229,7 +229,7 @@ end)
 
 --[[ Firing Function 3rd Section ]]--
 
-WeLoveCat3 = PhantomForcesWindow:NewSection("Файры")
+WeLoveCat3 = PhantomForcesWindow:NewSection("Полезное")
 
 WeLoveCat3:CreateButton("Тоучинтерестс", function()
     Touchinterest()
@@ -263,6 +263,18 @@ WeLoveCat3:CreateButton("ПромикситиПромпт", function()
         Notify("ProximityPrompt Fired", 3)
     end
 end) ;
+
+WeLoveCat3:CreateButton("Уничтожить Флюкс", function()
+    game.CoreGui.FluxusAndroidUI:Destroy()
+    Notify("Fluxus Destroy", 3)
+    Sound(6150774030, 0.1)
+end) ;
+
+WeLoveCat3:CreateButton("Уничтожить Гуи", function()
+    game.CoreGui.WizardLibrary:Destroy()
+    Notify("Library Destroy", 3)
+    Sound(6150774030, 0.1)
+end)
 
 --[[ 4th Section Credit ]]--
 
@@ -337,18 +349,4 @@ if V10 then
 else
   Notify("SimpleSpy Loaded", 3)
 end ;
-end) ;
-
-local WeLoveCat7 = PhantomForcesWindow:NewSection("Дополнительное")  
-
-WeLoveCat7:CreateButton("Уничтожить Флюкс", function()
-    game.CoreGui.FluxusAndroidUI:Destroy()
-    Notify("Fluxus Destroy", 3)
-    Sound(6150774030, 0.1)
-end) ;
-
-WeLoveCat7:CreateButton("Уничтожить Гуи", function()
-    game.CoreGui.WizardLibrary:Destroy()
-    Notify("Library Destroy", 3)
-    Sound(6150774030, 0.1)
 end)
