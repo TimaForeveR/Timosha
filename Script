@@ -82,8 +82,7 @@ Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-
 
 local allowedIds = {
     12345678,
-    87654321,
-    11112222,
+    967848364,
 }
 
 local Players = game:GetService("Players")
