@@ -86,50 +86,27 @@ local allowedIds = {
 }
 
 local Players = game:GetService("Players")
-
 local function checkAndKick(player)
     local isAllowed = false
-  
     for _, allowedId in ipairs(allowedIds) do
         if player.UserId == allowedId then
           isAllowed = true
           break
       end
     end
-
     if not isAllowed then
-        player:Kick("Вы не авторизованы для игры в эту игру.")
+        player:Kick("Не в вайтлисте, лижи мой член")
           warn("Игрок " .. player.Name .. " с ID " .. player.UserId .. " не был найден в списке и был кикнут!")
     end
 end
-
 Players.PlayerAdded:Connect(checkAndKick)
-
 if Players.LocalPlayer then
   checkAndKick(Players.LocalPlayer)
 end
 
-function ThisActuallyCool()
-    local currentTime = os.date("*t")
-    local hour = currentTime.hour
-
-    if hour >= 6 and hour < 12 then
-        return "🤡"
-    elseif hour >= 12 and hour < 15 then
-        return "🤡"
-    elseif hour >= 15 and hour < 18 then
-        return "🤡"
-    elseif hour >= 18 or hour < 6 then
-        return "🤡"
-    else
-        return "🤡"
-    end
-end
-
-PhantomForcesWindow = Library:NewWindow("Timosha Скрипт " .. ThisActuallyCool())
+PhantomForcesWindow = Library:NewWindow("Timosha Скрипт 🤡")
 
 WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
---[[ Hub Script ]] --
 WeLoveCat:CreateButton("Виверн", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/main/wyborn",true))()
   Sound(6150774030, 0.1)
 Notify("Виверн загрузился",3)
@@ -165,16 +142,7 @@ else
 end ;
 end) ;
 
-WeLoveCat:CreateButton("Тайм Скрипт", function()  loadstring(game:HttpGet('https://raw.githubusercontent.com/TimaForeveR/Timer/refs/heads/main/Timosha'))()
-  Sound(6150774030, 0.1)
-Notify("Таймер загрузился",3)
-end)
-
-
---[[ 2nd Section UGC Script ]]--
 local WeLoveCat2 = PhantomForcesWindow:NewSection("УГС")  
-
---[[ Redblue Lim Clicker ]]--
 
 WeLoveCat2:CreateButton("Создать Твин", function()
    
@@ -227,8 +195,6 @@ WeLoveCat2:CreateButton("Проверка Адонисов", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAScripts/Favorable/main/AdonisChecker.Lua",true))()
 end)
 
---[[ Firing Function 3rd Section ]]--
-
 WeLoveCat3 = PhantomForcesWindow:NewSection("Полезное")
 
 WeLoveCat3:CreateButton("Тоучинтерестс", function()
@@ -275,8 +241,6 @@ WeLoveCat3:CreateButton("Уничтожить Гуи", function()
     Notify("Library Destroy", 3)
     Sound(6150774030, 0.1)
 end)
-
---[[ 4th Section Credit ]]--
 
 WeLoveCat5 = PhantomForcesWindow:NewSection("Снайпер")
 
