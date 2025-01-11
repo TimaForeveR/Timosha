@@ -80,6 +80,36 @@ end
 
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
+local allowedIds = {
+    12345678,
+    87654321,
+    11112222,
+}
+
+local Players = game:GetService("Players")
+
+local function checkAndKick(player)
+    local isAllowed = false
+  
+    for _, allowedId in ipairs(allowedIds) do
+        if player.UserId == allowedId then
+          isAllowed = true
+          break
+      end
+    end
+
+    if not isAllowed then
+        player:Kick("Вы не авторизованы для игры в эту игру.")
+          warn("Игрок " .. player.Name .. " с ID " .. player.UserId .. " не был найден в списке и был кикнут!")
+    end
+end
+
+Players.PlayerAdded:Connect(checkAndKick)
+
+if Players.LocalPlayer then
+  checkAndKick(Players.LocalPlayer)
+end
+
 function ThisActuallyCool()
     local currentTime = os.date("*t")
     local hour = currentTime.hour
