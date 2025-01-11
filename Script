@@ -114,19 +114,19 @@ function ThisActuallyCool()
     local hour = currentTime.hour
 
     if hour >= 6 and hour < 12 then
-        return "☃️"
+        return "🤡"
     elseif hour >= 12 and hour < 15 then
-        return "☃️"
+        return "🤡"
     elseif hour >= 15 and hour < 18 then
-        return "☃️"
+        return "🤡"
     elseif hour >= 18 or hour < 6 then
-        return "☃️"
+        return "🤡"
     else
-        return "☃️"
+        return "🤡"
     end
 end
 
-PhantomForcesWindow = Library:NewWindow("Тимоша Скрипт " .. ThisActuallyCool())
+PhantomForcesWindow = Library:NewWindow("Timosha Скрипт " .. ThisActuallyCool())
 
 WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
 --[[ Hub Script ]] --
