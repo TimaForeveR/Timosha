@@ -81,7 +81,7 @@ end
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
 local allowedIds = {
-    12345678,
+    3433396455,
     967848364,
 }
 
