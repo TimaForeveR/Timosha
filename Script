@@ -130,7 +130,7 @@ PhantomForcesWindow = Library:NewWindow("Timosha Скрипт " .. ThisActuallyC
 
 WeLoveCat = PhantomForcesWindow:NewSection("Скрипты")
 --[[ Hub Script ]] --
-WeLoveCat:CreateButton("Виверн", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/wyvernleaker/WYVERN/main/WYVERN.lua",true))()
+WeLoveCat:CreateButton("Виверн", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ckw69/Wyborn/main/wyborn",true))()
   Sound(6150774030, 0.1)
 Notify("Виверн загрузился",3)
 end)
