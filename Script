@@ -84,6 +84,7 @@ local allowedIds = {
     3433396455,
     967848364,
     1910651527,
+    1502953132,
 }
 
 local Players = game:GetService("Players")
@@ -229,12 +230,6 @@ WeLoveCat3:CreateButton("ПромикситиПромпт", function()
     else
         Notify("ProximityPrompt Fired", 3)
     end
-end) ;
-
-WeLoveCat3:CreateButton("Уничтожить Флюкс", function()
-    game.CoreGui.FluxusAndroidUI:Destroy()
-    Notify("Fluxus Destroy", 3)
-    Sound(6150774030, 0.1)
 end) ;
 
 WeLoveCat3:CreateButton("Уничтожить Гуи", function()
