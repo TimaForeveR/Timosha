@@ -85,6 +85,7 @@ local allowedIds = {
     967848364,
     1910651527,
     1502953132,
+    2468190160,
 }
 
 local Players = game:GetService("Players")
